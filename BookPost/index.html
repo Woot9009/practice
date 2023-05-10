@@ -1,0 +1,391 @@
+﻿<!doctype html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<title>Woot's Bookshelf</title>
+		<link rel="shortcut icon" href="images/favicon.ico">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+		<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+		<style>
+			@import url(css/reset.css);
+			@import url(css/front.css);
+			/*@charset "utf-8"; id래퍼, slideBtn, footer로고 이미지경로설정 다시*/
+		</style>
+		<script src="js/bookshelf.js"></script>
+	</head>
+	<body>
+		<div id="wrapper">
+			<header>
+				<a href="index.html"><img src="images/logo.png" alt="logo" width="110px" height="50px"></a>
+				<ul id="gnb">
+					<li><a href="#p2">My Bookshelf</a></li>
+					<li><a href="#p2">My Post</a></li>
+					<li><a href="#p3">Books&amp;Posts</a></li>
+				</ul>
+				<div id="search">
+					<input type="search" name="search bar">
+					<a href="#p3"><img src="images/magnifier.png" alt="search icon" width="20px" height="20px"></a>
+				</div>
+				<a id="login" href="#"><img src="images/human.png" alt="log-in" width="30px" height="30px"></a>
+			</header>
+
+			<section>
+				<div id="p1">
+					<div id="leftSide">
+						<div id="mainBook">
+							<ul class="p1Books">
+								<li><img src="images/b5.jpg" alt="무기여잘있거라"></li>
+								<li><img src="images/b2.jpg" alt="도시는무엇으로사는가"></li>
+								<li><img src="images/b4.jpg" alt="눈먼자들의도시"></li>
+								<li><img src="images/b1.jpg" alt="sapiens"></li>
+								<li><img src="images/b3.jpg" alt="하얼빈"></li>
+								<li><img src="images/b6.jpg" alt="떨림과울림"></li>
+								<li><img src="images/b5.jpg" alt="무기여잘있거라"></li>
+							</ul>
+						</div>
+						<span class="slideBtn leftBtn"></span>
+						<span class="slideBtn rightBtn"></span>
+						<ul id="mainPager">
+							<li><span class="pager"></span></li>
+							<li><span class="pager"></span></li>
+							<li><span class="pager"></span></li>
+							<li><span class="pager"></span></li>
+							<li><span class="pager"></span></li>
+							<li><span class="pager"></span></li>
+						</ul>
+					</div>
+					<ul id="rightSide">
+						<li class="mainBookInfo">
+							<div class="info">
+								<h3>무기여 잘있거라</h3>
+								<p>저자: 어니스트 헤밍웨이</p>
+								<p>출판사: 문학동네</p>
+							</div>
+							
+							<div class="comment">
+								<h3>독자 한줄평</h3>
+								<div class="user">
+									<p>매주한권</p>
+									<span>Lorem Ipsum. This is user commentary space.</span>
+									<a href="#">더보기</a>
+								</div>
+								<div class="user">
+									<p>이사람</p>
+									<span>Lorem Ipsum. This is user commentary space.</span>
+									<a href="#">더보기</a>
+								</div>
+								<div class="user">
+									<p>책쓰리</p>
+									<span>Lorem Ipsum. This is user commentary space.</span>
+									<a href="#">더보기</a>
+								</div>
+								<div class="user">
+									<p>네임</p>
+									<span>Lorem Ipsum. This is user commentary space.</span>
+									<a href="#">더보기</a>
+								</div>
+							</div>
+						</li>
+						<li class="mainBookInfo">
+							<div class="info">
+								<h3>도시는 무엇으로 사는가</h3>
+								<p>저자: 유현준</p>
+								<p>출판사: 을유문화사</p>
+							</div>
+							
+							<div class="comment">
+								<h3>독자 한줄평</h3>
+								<div class="user">
+									<p>user1</p>
+									<span>It is simply dummy text of the book post.</span>
+									<a href="#">더보기</a>
+								</div>
+								<div class="user">
+									<p>user2</p>
+									<span>It is simply dummy text of the book post.</span>
+									<a href="#">더보기</a>
+								</div>
+								<div class="user">
+									<p>user3</p>
+									<span>It is simply dummy text of the book post.</span>
+									<a href="#">더보기</a>
+								</div>
+								<div class="user">
+									<p>user4</p>
+									<span>It is simply dummy text of the book post.</span>
+									<a href="#">더보기</a>
+								</div>
+							</div>
+						</li>
+						<li class="mainBookInfo">
+							<div class="info">
+								<h3>눈먼 자들의 도시</h3>
+								<p>저자: 주제 사라마구</p>
+								<p>출판사: 해냄</p>
+							</div>
+							
+							<div class="comment">
+								<h3>독자 한줄평</h3>
+								<div class="user">
+									<p>blind1</p>
+									<span>Lorem Ipsum. This is user commentary space.</span>
+									<a href="#">더보기</a>
+								</div>
+								<div class="user">
+									<p>blind2</p>
+									<span>Lorem Ipsum. I wish that you do not spoil of story.</span>
+									<a href="#">더보기</a>
+								</div>
+								<div class="user">
+									<p>blind3</p>
+									<span>Lorem Ipsum. This is user commentary space.</span>
+									<a href="#">더보기</a>
+								</div>
+								<div class="user">
+									<p>blind4</p>
+									<span>Lorem Ipsum. I wish that you do not spoil of story.</span>
+									<a href="#">더보기</a>
+								</div>
+							</div>
+						</li>
+						<li class="mainBookInfo">
+							<div class="info">
+								<h3>사피엔스</h3>
+								<p>저자: 유발 하라리</p>
+								<p>출판사: 김영사</p>
+							</div>
+							
+							<div class="comment">
+								<h3>독자 한줄평</h3>
+								<div class="user">
+									<p>허일락</p>
+									<span>사피엔스의 어제 오늘 내일...</span>
+									<a href="#">더보기</a>
+								</div>
+								<div class="user">
+									<p>조나단 리빙스턴</p>
+									<span>빅히스토리의 대표서적이라 해도 좋다.</span>
+									<a href="#">더보기</a>
+								</div>
+								<div class="user">
+									<p>김첨지</p>
+									<span>설렁탕 다음으로 좋은 책.</span>
+									<a href="#">더보기</a>
+								</div>
+								<div class="user">
+									<p>다산</p>
+									<span>사피엔스가 사피엔스에게</span>
+									<a href="#">더보기</a>
+								</div>
+							</div>
+						</li>
+						<li class="mainBookInfo">
+							<div class="info">
+								<h3>하얼빈</h3>
+								<p>저자: 김훈</p>
+								<p>출판사: 문학동네</p>
+							</div>
+							
+							<div class="comment">
+								<h3>독자 한줄평</h3>
+								<div class="user">
+									<p>김구</p>
+									<span>Lorem Ipsum. This is user commentary space.</span>
+									<a href="#">더보기</a>
+								</div>
+								<div class="user">
+									<p>윤봉길</p>
+									<span>Lorem Ipsum. This is user commentary space.</span>
+									<a href="#">더보기</a>
+								</div>
+								<div class="user">
+									<p>이봉창</p>
+									<span>Lorem Ipsum. This is user commentary space.</span>
+									<a href="#">더보기</a>
+								</div>
+								<div class="user">
+									<p>김원봉</p>
+									<span>Lorem Ipsum. This is user commentary space.</span>
+									<a href="#">더보기</a>
+								</div>
+							</div>
+						</li>
+						<li class="mainBookInfo">
+							<div class="info">
+								<h3>떨림과 울림</h3>
+								<p>저자: 김상욱</p>
+								<p>출판사: 동아시아</p>
+							</div>
+							
+							<div class="comment">
+								<h3>독자 한줄평</h3>
+								<div class="user">
+									<p>Albert</p>
+									<span>It is simply dummy text of the book post.</span>
+									<a href="#">더보기</a>
+								</div>
+								<div class="user">
+									<p>Isaac</p>
+									<span>Lorem Ipsum. This is user commentary space.</span>
+									<a href="#">더보기</a>
+								</div>
+								<div class="user">
+									<p>John</p>
+									<span>It is simply dummy text of the book post.</span>
+									<a href="#">더보기</a>
+								</div>
+								<div class="user">
+									<p>Antonie</p>
+									<span>Lorem Ipsum. This is user commentary space.</span>
+									<a href="#">더보기</a>
+								</div>
+							</div>
+						</li>
+						
+					</ul>
+					
+					<div id="pop"><!-- pop up창 시작 -->
+						<h2>오늘의 포스트</h2>
+						<div class="popleft">
+							<h3>[공감 많은 책]</h3>
+							<a href="#"><img src="images/pop1.jpg" alt="beautiful days" width="200px" height="290px"></a>
+							<h4>나의 아름다운 날들</h4>
+							<p>정지아</p>
+						</div>
+						<div class="popright">
+							<h3>[화제의 책]</h3>
+							<a href="#"><img src="images/pop2.jpg" alt="giant threat" width="200px" height="290px"></a>
+							<h4>초거대 위협</h4>
+							<p>누리엘 루비니</p>
+						</div>
+						<p><input type="checkbox" name="show" value="stop">&nbsp;오늘 하루 보지 않기&nbsp;<a href="#">[닫기]</a></p>
+					</div><!-- pop up창 끝 -->
+				</div><!-- page1 끝 -->
+				
+				<div id="p2">
+					<h3 class="p2title">
+						<ul id="array">
+							<li><img src="images/customize.png" alt="array" width="60px" height="60px"></li>
+							<li>
+								<p>정렬</p>
+								<ul>
+									<li id="arrayNewest">최근에 읽은 책부터</li>
+									<li id="arrayLastest">예전에 읽은 책부터</li>
+									<li id="arrayWriter">작가명 오름차순</li>
+									<li id="arrayBooktitle">책 제목 오름차순</li>
+								</ul>
+							</li>
+						</ul>
+					</h3>
+					
+					<ul class="bookshelf">
+						<li class="mybook">
+							<a href="#"><img src="images/b1.jpg" alt="사피엔스" data-postIndex="0"></a>
+							<h4>사피엔스</h4>
+							<p>유발 하라리</p>
+						</li>
+						<li class="mybook">
+							<a href="#"><img src="images/b2.jpg" alt="도시는무엇으로사는가" data-postIndex="1"></a>
+							<h4>도시는 무엇으로 사는가</h4>
+							<p>유현준</p>
+						</li>
+						<li class="mybook">
+							<a href="#"><img src="images/b3.jpg" alt="하얼빈" data-postIndex="2"></a>
+							<h4>하얼빈</h4>
+							<p>김훈</p>
+						</li>
+						<li class="mybook">
+							<a href="#"><img src="images/b4.jpg" alt="눈먼자들의도시" data-postIndex="3"></a>
+							<h4>눈먼 자들의 도시</h4>
+							<p>주제 사라마구</p>
+						</li>
+						<li class="mybook">
+							<a href="#"><img src="images/b5.jpg" alt="무기여잘있거라" data-postIndex="4"></a>
+							<h4>무기여 잘있거라</h4>
+							<p>어니스트 헤밍웨이</p>
+						</li>
+						<li class="mybook">
+							<a href="#"><img src="images/b6.jpg" alt="떨림과울림" data-postIndex="5"></a>
+							<h4>떨림과 울림</h4>
+							<p>김상욱</p>
+						</li>
+						<li class="mybook">
+							<a href="#"><img src="images/b7.jpg" alt="여우난골족" data-postIndex="6"></a>
+							<h4>여우난골족</h4>
+							<p>백석</p>
+						</li>
+						<li class="mybook">
+							<a href="#"><img src="images/b8.jpg" alt="밀리터리세계사" data-postIndex="7"></a>
+							<h4>밀리터리 세계사</h4>
+							<p>김세환</p>
+						</li>
+					</ul>
+				</div><!-- page2 끝 -->
+				
+				<div id="p3">
+					<div class="result1">
+						<h3>Books</h3>
+						<div class="bookresult">
+							<a href="#"><img src="images/b3.jpg" alt="하얼빈" width="90px" height="130px"></a>
+							<h4>하얼빈</h4>
+							<p>김훈</p>
+						</div>
+						<div class="bookresult">
+							<a href="#"><img src="images/k2.jpg" alt="칼의노래" width="90px" height="130px"></a>
+							<h4>칼의 노래</h4>
+							<p>김훈</p>
+						</div>
+						<div class="bookresult">
+							<a href="#"><img src="images/k3.jpg" alt="라면을끓이며" width="90px" height="130px"></a>
+							<h4>라면을 끓이며</h4>
+							<p>김훈</p>
+						</div>
+						<div class="bookresult">
+							<a href="#"><img src="images/k4.jpg" alt="남한산성" width="90px" height="130px"></a>
+							<h4>남한산성</h4>
+							<p>김훈</p>
+						</div>
+						<div class="bookresult">
+							<a href="#"><img src="images/k5.jpg" alt="흑산" width="90px" height="130px"></a>
+							<h4>흑산</h4>
+							<p>김훈</p>
+						</div>
+						<div class="bookresult">
+							<a href="#"><img src="images/k6.jpg" alt="현의노래" width="90px" height="130px"></a>
+							<h4>현의 노래</h4>
+							<p>김훈</p>
+						</div>
+						<a href="#"><img src="images/dots_n.png" onmouseover="this.src='images/dots_h.png'" onmouseout="this.src='images/dots_n.png'" alt="3dots" width="60px" height="15px"></a>
+					</div>
+					
+					<div class="result2">
+						<h3>Posts</h3>
+						<div class="postresult">
+							<img src="images/b3.jpg" alt="하얼빈" width="60px" height="90px">
+							<div class="text">
+								<a class="comment" href="#">인물과 총알과 말과 글이 조용히 발사된다.</a>
+								<a href="#"><span>김훈작가는 내가 정말 좋아하는 문체를 가졌다. 정확히는 그 문체를 가졌다기보다는 내가 좋아하는 문체 자체라는 말이 맞겠다. 간결하면서도 무뚝뚝한 듯하면서도 세심한. 시가 아닌 소설임에도 행간으로 시 못지 않게 많은 말을 하는 간결한 글이 신기하다.</span></a>
+							</div>
+							<span class="postinfo">닉네임	2023 - 02 - 02</span>
+						</div>
+						<div class="postresult">
+							<img src="images/b3.jpg" alt="하얼빈" width="60px" height="90px">
+							<div class="text">
+								<a class="comment" href="#">여기 하얼빈역이 어디오.</a>
+								<a href="#"><span>하얼빈은 국민 모두가 아는 결말임에도 읽는 내내 긴장감이 지속됐다. 중반부까지 안중근 의사와 이토가 하얼빈을 향하는 모습이 번갈아 제시되는데 그 구도가 마치 운명을 향해 반발씩 치닫는 발걸음 같았다. 작가의 말에 의하면 후반부의 재판과정은 소설적으로 재구성할 바가 거의 없었다는데 안중근 의사의 진술이 워낙 힘있고 의연한 명문이라 소설안에서 자연스럽게 어우러져 빛이 났다.</span></a>
+							</div>
+							<span class="postinfo">도마 2023 - 01 - 01</span>
+						</div>
+					</div>
+				</div><!-- page3 끝 -->
+			</section>
+
+			<footer>
+				<address>
+					E-mail: lalala9009@naver.com<br>
+					Copyrightⓒ 2023 Woot's Bookshelf. Alrights Reserved.
+				</address>
+			</footer>
+		</div><!-- wrapper 끝 -->
+	</body>
+</html>
